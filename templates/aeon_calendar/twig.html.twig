@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AeonCalendarController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Aeon Calendar</h1>
+
+    <ul>
+        <li>Current Year <code id="calendar-year">{{ aeon_current_year().toString }}</code></li>
+        <li>Current Month <code id="calendar-month">{{ aeon_current_month().toString }}</code></li>
+        <li>Current Day <code id="calendar-day">{{ aeon_current_day() | aeon_day_format }}</code></li>
+        <li>Current DateTime <code id="calendar-datetime">{{ aeon_now() | aeon_datetime_format }}</code></li>
+        <li>Current DateTime <code id="calendar-time">{{ aeon_current_time() | aeon_time_format }}</code></li>
+    </ul>
+</div>
+{% endblock %}

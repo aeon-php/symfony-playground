@@ -1,4 +1,40 @@
 {
+    "aeon-php/calendar": {
+        "version": "0.11.0"
+    },
+    "aeon-php/calendar-twig": {
+        "version": "0.6.0"
+    },
+    "aeon-php/retry": {
+        "version": "0.4.0"
+    },
+    "aeon-php/sleep": {
+        "version": "0.5.0"
+    },
+    "aeon-php/symfony-bundle": {
+        "version": "1.x-dev"
+    },
+    "doctrine/annotations": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "a2759dd6123694c8d901d0ec80006e044c2e6457"
+        },
+        "files": [
+            "config/routes/annotations.yaml"
+        ]
+    },
+    "doctrine/inflector": {
+        "version": "1.4.3"
+    },
+    "doctrine/lexer": {
+        "version": "1.2.1"
+    },
+    "nikic/php-parser": {
+        "version": "v4.10.2"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -7,6 +43,9 @@
     },
     "psr/log": {
         "version": "1.1.3"
+    },
+    "symfony/browser-kit": {
+        "version": "v4.4.16"
     },
     "symfony/cache": {
         "version": "v4.4.16"
@@ -30,10 +69,16 @@
             "config/bootstrap.php"
         ]
     },
+    "symfony/css-selector": {
+        "version": "v4.4.16"
+    },
     "symfony/debug": {
         "version": "v4.4.16"
     },
     "symfony/dependency-injection": {
+        "version": "v4.4.16"
+    },
+    "symfony/dom-crawler": {
         "version": "v4.4.16"
     },
     "symfony/dotenv": {
@@ -66,6 +111,9 @@
             ".env"
         ]
     },
+    "symfony/form": {
+        "version": "v4.4.16"
+    },
     "symfony/framework-bundle": {
         "version": "4.4",
         "recipe": {
@@ -96,8 +144,44 @@
     "symfony/http-kernel": {
         "version": "v4.4.16"
     },
+    "symfony/inflector": {
+        "version": "v4.4.16"
+    },
+    "symfony/intl": {
+        "version": "v4.4.16"
+    },
+    "symfony/maker-bundle": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
+        }
+    },
     "symfony/mime": {
         "version": "v4.4.16"
+    },
+    "symfony/options-resolver": {
+        "version": "v4.4.16"
+    },
+    "symfony/phpunit-bridge": {
+        "version": "4.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.3",
+            "ref": "6d0e35f749d5f4bfe1f011762875275cd3f9874f"
+        },
+        "files": [
+            ".env.test",
+            "bin/phpunit",
+            "phpunit.xml.dist",
+            "tests/bootstrap.php"
+        ]
+    },
+    "symfony/polyfill-intl-icu": {
+        "version": "v1.20.0"
     },
     "symfony/polyfill-intl-idn": {
         "version": "v1.20.0"
@@ -117,6 +201,9 @@
     "symfony/polyfill-php80": {
         "version": "v1.20.0"
     },
+    "symfony/property-access": {
+        "version": "v4.4.16"
+    },
     "symfony/routing": {
         "version": "4.2",
         "recipe": {
@@ -134,6 +221,45 @@
     "symfony/service-contracts": {
         "version": "v2.2.0"
     },
+    "symfony/test-pack": {
+        "version": "v1.0.7"
+    },
+    "symfony/translation-contracts": {
+        "version": "v2.3.0"
+    },
+    "symfony/twig-bridge": {
+        "version": "v4.4.16"
+    },
+    "symfony/twig-bundle": {
+        "version": "4.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.4",
+            "ref": "15a41bbd66a1323d09824a189b485c126bbefa51"
+        },
+        "files": [
+            "config/packages/test/twig.yaml",
+            "config/packages/twig.yaml",
+            "templates/base.html.twig"
+        ]
+    },
+    "symfony/twig-pack": {
+        "version": "v1.0.2"
+    },
+    "symfony/validator": {
+        "version": "4.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.3",
+            "ref": "d902da3e4952f18d3bf05aab29512eb61cabd869"
+        },
+        "files": [
+            "config/packages/test/validator.yaml",
+            "config/packages/validator.yaml"
+        ]
+    },
     "symfony/var-dumper": {
         "version": "v4.4.16"
     },
@@ -142,5 +268,11 @@
     },
     "symfony/yaml": {
         "version": "v4.4.16"
+    },
+    "twig/extra-bundle": {
+        "version": "v3.1.1"
+    },
+    "twig/twig": {
+        "version": "v3.1.1"
     }
 }
