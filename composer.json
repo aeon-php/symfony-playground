@@ -5,6 +5,7 @@
         "php": ">=7.4",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "aeon-php/calendar-holidays-yasumi": ">=0.5.0",
         "aeon-php/symfony-bundle": "1.x@dev",
         "doctrine/annotations": "^1.11",
         "symfony/console": "5.1.*",
@@ -58,7 +59,8 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "cs:php:fix": "tools/php-cs-fixer fix"
     },
     "conflict": {
         "symfony/symfony": "*"

@@ -1,2 +1,3 @@
 aeon:
   calendar_timezone: 'UTC'
+  calendar_holidays_factory_service: 'calendar.holidays.factory.yasumi'
