@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c7ed4b321c854dcffe29c21c339f571d",
+    "content-hash": "276895cc78f8450c96a37d57875de71e",
     "packages": [
         {
             "name": "aeon-php/calendar",
@@ -61,6 +61,120 @@
                 }
             ],
             "time": "2020-10-23T20:30:34+00:00"
+        },
+        {
+            "name": "aeon-php/calendar-holidays",
+            "version": "0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aeon-php/calendar-holidays.git",
+                "reference": "fe57a0be9b517b1539d329e6a89cb303526f93fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aeon-php/calendar-holidays/zipball/fe57a0be9b517b1539d329e6a89cb303526f93fd",
+                "reference": "fe57a0be9b517b1539d329e6a89cb303526f93fd",
+                "shasum": ""
+            },
+            "require": {
+                "aeon-php/calendar": ">=0.11.0",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=7.4.2"
+            },
+            "require-dev": {
+                "google/apiclient": "^2.0",
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-latest": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Aeon\\": [
+                        "src/Aeon"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Holidays calendar abstraction layer for Aeon Time management framework",
+            "keywords": [
+                "calendar",
+                "holidays",
+                "immutable",
+                "sleep"
+            ],
+            "support": {
+                "issues": "https://github.com/aeon-php/calendar-holidays/issues",
+                "source": "https://github.com/aeon-php/calendar-holidays/tree/0.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/norberttech",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-11-05T22:01:09+00:00"
+        },
+        {
+            "name": "aeon-php/calendar-holidays-yasumi",
+            "version": "0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aeon-php/calendar-holidays-yasumi.git",
+                "reference": "ff5ada9b198bad49d1ba792a9ae68b04a4a9fe30"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aeon-php/calendar-holidays-yasumi/zipball/ff5ada9b198bad49d1ba792a9ae68b04a4a9fe30",
+                "reference": "ff5ada9b198bad49d1ba792a9ae68b04a4a9fe30",
+                "shasum": ""
+            },
+            "require": {
+                "aeon-php/calendar-holidays": ">=0.5.0",
+                "azuyalabs/yasumi": "^2.0",
+                "php": ">=7.4.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Aeon\\": [
+                        "src/Aeon"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Bridge for Aeon Calendar Holidays library and Yasumi",
+            "keywords": [
+                "Bridge",
+                "Yasumi",
+                "calendar",
+                "holidays",
+                "immutable"
+            ],
+            "support": {
+                "issues": "https://github.com/aeon-php/calendar-holidays-yasumi/issues",
+                "source": "https://github.com/aeon-php/calendar-holidays-yasumi/tree/0.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/norberttech",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-11-06T18:59:28+00:00"
         },
         {
             "name": "aeon-php/calendar-twig",
@@ -240,16 +354,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/aeon-php/symfony-bundle.git",
-                "reference": "8b462b8723cbf0b5bc2daf7c73859929b0e58709"
+                "reference": "221133e9871655e1a397382bea6ed96d6485d6af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aeon-php/symfony-bundle/zipball/8b462b8723cbf0b5bc2daf7c73859929b0e58709",
-                "reference": "8b462b8723cbf0b5bc2daf7c73859929b0e58709",
+                "url": "https://api.github.com/repos/aeon-php/symfony-bundle/zipball/221133e9871655e1a397382bea6ed96d6485d6af",
+                "reference": "221133e9871655e1a397382bea6ed96d6485d6af",
                 "shasum": ""
             },
             "require": {
                 "aeon-php/calendar": ">=0.11.0",
+                "aeon-php/calendar-holidays": ">=0.5.0",
                 "aeon-php/calendar-twig": ">=0.6.0",
                 "aeon-php/retry": ">=0.4.0",
                 "aeon-php/sleep": ">=0.5.0",
@@ -261,7 +376,9 @@
                 "symfony/validator": "^4.4|^5.0|^5.1"
             },
             "require-dev": {
+                "aeon-php/calendar-holidays-yasumi": ">=0.5.0",
                 "phpunit/phpunit": "^9.1",
+                "symfony/browser-kit": "^4.4|^5.0|^5.1",
                 "symfony/framework-bundle": "^4.4|^5.0|^5.1"
             },
             "default-branch": true,
@@ -296,7 +413,77 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-30T18:45:45+00:00"
+            "time": "2020-11-07T06:31:12+00:00"
+        },
+        {
+            "name": "azuyalabs/yasumi",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/azuyalabs/yasumi.git",
+                "reference": "e2f37e6de3b15642b83275a24bbfe101cd5c7791"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/azuyalabs/yasumi/zipball/e2f37e6de3b15642b83275a24bbfe101cd5c7791",
+                "reference": "e2f37e6de3b15642b83275a24bbfe101cd5c7791",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "fzaninotto/faker": "^1.9",
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^8.5"
+            },
+            "suggest": {
+                "ext-calendar": "For calculating the date of Easter"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yasumi\\": "src/Yasumi/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sacha Telgenhof",
+                    "email": "me@sachatelgenhof.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "The easy PHP Library for calculating holidays.",
+            "homepage": "https://www.yasumi.dev",
+            "keywords": [
+                "Bank",
+                "calculation",
+                "calendar",
+                "celebration",
+                "date",
+                "holiday",
+                "holidays",
+                "national",
+                "time"
+            ],
+            "support": {
+                "docs": "https://www.yasumi.dev",
+                "issues": "https://github.com/azuyalabs/yasumi/issues",
+                "source": "https://github.com/azuyalabs/yasumi"
+            },
+            "funding": [
+                {
+                    "url": "https://www.buymeacoffee.com/sachatelgenhof",
+                    "type": "other"
+                }
+            ],
+            "time": "2020-06-22T12:46:20+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1672,16 +1859,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.9.10",
+            "version": "v1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "7335ec033995aa34133e621627333368f260b626"
+                "reference": "e38520236bdc911c2f219634b485bc328746e980"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/7335ec033995aa34133e621627333368f260b626",
-                "reference": "7335ec033995aa34133e621627333368f260b626",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/e38520236bdc911c2f219634b485bc328746e980",
+                "reference": "e38520236bdc911c2f219634b485bc328746e980",
                 "shasum": ""
             },
             "require": {
@@ -1719,7 +1906,7 @@
             "description": "Composer plugin for Symfony",
             "support": {
                 "issues": "https://github.com/symfony/flex/issues",
-                "source": "https://github.com/symfony/flex/tree/v1.9.10"
+                "source": "https://github.com/symfony/flex/tree/v1.10.0"
             },
             "funding": [
                 {
@@ -1735,7 +1922,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-14T17:41:54+00:00"
+            "time": "2020-11-05T10:56:45+00:00"
         },
         {
             "name": "symfony/form",
