@@ -11,6 +11,9 @@
     "aeon-php/calendar-twig": {
         "version": "0.6.0"
     },
+    "aeon-php/rate-limiter": {
+        "version": "0.7.0"
+    },
     "aeon-php/retry": {
         "version": "0.4.0"
     },
