@@ -6,6 +6,7 @@ This playground is using only the latest version of [Aeon](https://aeon-php.org/
 
 * Symfony [4.4.*](https://github.com/aeon-php/symfony-playground/tree/4.4), PHP >= 7.4
 * Symfony [5.1.*](https://github.com/aeon-php/symfony-playground/tree/5.1), PHP >= 7.4
+* Symfony [5.4.*](https://github.com/aeon-php/symfony-playground/tree/5.4), PHP >= 7.4
 
 
 In order to test the integration launch [symfony server](https://symfony.com/download) and open following pages: 
@@ -17,4 +18,4 @@ symfony server:start
 
 * [Calendar](https://127.0.0.1:8000/aeon/calendar)
 * [Twig](https://127.0.0.1:8000/aeon/calendar-twig)
-* [Forms](https://127.0.0.1:8000/aeqon/form)
+* [Forms](https://127.0.0.1:8000/aeon/form)
